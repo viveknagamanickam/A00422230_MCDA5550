@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.vivek.sqltest">
-
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    package="com.example.vivek.bmicalculator">
 
     <application
         android:allowBackup="true"
@@ -14,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" >
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Layout" />
-        <activity android:name=".CalculateBMI" />
-        <activity android:name=".BmiLayout" />
-
+        <activity android:name=".ViewUser" />
+        <activity android:name=".CalculateBmi" />
+        <activity android:name=".ViewBmiData" />
+        <activity android:name=".AddUser"></activity>
     </application>
 
 </manifest>

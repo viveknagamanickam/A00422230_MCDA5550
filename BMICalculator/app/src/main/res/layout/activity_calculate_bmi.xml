@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vivek.sqltest.CalculateBMI">
+    tools:context="com.example.vivek.bmicalculator.CalculateBmi">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -15,10 +15,10 @@
             android:layout_height="match_parent" >
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Height" />
+                android:text="HEIGHT" />
 
             <EditText
                 android:id="@+id/textHeight"
@@ -26,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number" />
+
         </TableRow>
 
         <TableRow
@@ -33,10 +34,10 @@
             android:layout_height="match_parent" >
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Weight" />
+                android:text="WEIGHT" />
 
             <EditText
                 android:id="@+id/textWeight"
@@ -51,11 +52,18 @@
             android:layout_height="match_parent" >
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonCalculate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="calculate"
                 android:text="Calculate" />
+
+            <Button
+                android:id="@+id/buttonViewBmiData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="viewHistory"
+                android:text="History" />
         </TableRow>
 
         <TableRow
@@ -63,21 +71,9 @@
             android:layout_height="match_parent" >
 
             <TextView
-                android:id="@+id/textResult"
+                android:id="@+id/ViewBmiResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <Button
-                android:id="@+id/buttonHistory"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="History" />
         </TableRow>
     </TableLayout>
 </android.support.constraint.ConstraintLayout>

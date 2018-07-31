@@ -16,6 +16,9 @@ public final class UserContract {
         public static final String PASSWORD = "password";
         public static final String DATE = "date";
         public static final String HEALTH_CARD_NUMBER = "healthCardNumber";
+        public static final String TABME_NAME_BMI = "bmiInfo";
+        public static final int HEIGHT = 0;
+        public static final int WEIGHT = 0;
     }
 
 
